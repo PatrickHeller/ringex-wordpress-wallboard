@@ -23,7 +23,7 @@ Queues via `GET /restapi/v1.0/account/~/extension?extensionType=Department`
 (zusätzlich hart auf `type === 'Department'` gefiltert, da RC den Filter nicht strikt einhält).
 
 **Anrufstatistik läuft über das klassische Call-Log**, nicht über die Analytics-API:
-`GET /restapi/v1.0/account/~/extension/{queueId}/call-log?direction=Inbound&type=Voice&view=Simple&...`
+`GET /restapi/v1.0/account/~/extension/{queueId}/call-log?direction=Inbound&type=Voice&view=Detailed&...`
 — liefert `result` und `duration` (Sekunden) direkt und korrekt. Die Analytics-API
 (`/analytics/calls/v1/.../records/fetch`) wurde bewusst verworfen: bei extern weitergeleiteten
 Anrufen fehlt dort der erfolgreiche Ziel-Hop komplett, wodurch tatsächlich angenommene Anrufe fälschlich
