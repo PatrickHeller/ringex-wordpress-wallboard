@@ -1,0 +1,7 @@
+; Nach config_ex.ini im selben Ordner kopieren, echte Werte eintragen.
+ACCOUNT_ID = ""
+AUTH_URL = "https://platform.ringcentral.com"
+BASE_URL = "https://platform.ringcentral.com"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
+JWT_ASSERTION = ""
